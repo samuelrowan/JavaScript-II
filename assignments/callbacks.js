@@ -2,7 +2,7 @@
 
 const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
-/* 
+/*
 
   // GIVEN THIS PROBLEM:
 
@@ -41,14 +41,18 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 function getLength(arr, cb) {
   // getLength passes the length of the array into the callback.
+  return cb(arr.length)
 }
 
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  let i = arr.length - 1;
+  return cb(arr[i]);
 }
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x + y)
 }
 
 function multiplyNums(x, y, cb) {
